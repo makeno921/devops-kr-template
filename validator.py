@@ -37,12 +37,6 @@ def validate_snils(snils: str) -> bool:
         expected = calculated % 101
     
     return expected == check_sum
-# validator.py
-def validate_email(email: str) -> bool:
-    """Валидация email-адреса."""
-    import re
-    pattern = r'^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$'
-    return bool(re.match(pattern, email))
 
 def validate_phone(phone: str) -> bool:
     """Валидация российских(тут и так все норм было) номеров телефона."""
